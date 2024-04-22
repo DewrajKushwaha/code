@@ -40,7 +40,7 @@ class BinToDec {
     String num;
     int i, x;
     int flag = 0;
-    int bin[] = new int[32];
+    int bin[] = new int[16];
 
     void getdata2() {
         Scanner sc = new Scanner(System.in);
@@ -51,12 +51,14 @@ class BinToDec {
     }
 
     int n = 0;
+    int b=1;
 
     void calc2() {
-        for (i = 0; x > 0; i++) {
+        while ( x > 0) {
             i = x % 10;
             x = x / 10;
-            n += Math.pow(2, i);
+            n +=i*b;
+            b=b*2;
             if (i > 1) {
                 flag++;
             }
