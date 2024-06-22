@@ -28,7 +28,7 @@ public class string_methods {
         System.out.println("Number of spaces: "+count);
         System.out.println("Number of words "+(count+1));
         System.out.println("Number of Vowel "+x);
-        System.out.println("Number of Conconent "+(l-x));
+        System.out.println("Number of Conconent "+(l-x-count));
         
     }
 }
